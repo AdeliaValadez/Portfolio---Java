@@ -11,26 +11,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function(){
-  $("#skill1").click(function(){
-    $("#info-row").html("Recognizes and nurtures the potential in others, serving as a supportive mentor.").show();
-  });
+  $(".skills button").click(function(){
+    $(".skills button").removeClass("active");
 
-  $("#skill2").click(function(){
-    $("#info-row").html("Flexibly embraces change, thriving in dynamic environment").show();
-  });
+    $(this).addClass("active");
 
-  $("#skill3").click(function(){
-    $("#info-row").html("Efficiently orchestrates tasks and resources, adept at coordination.").show();
-  });
+    var skillText = $(this).text();
+    var description = "";
 
-  $("#skill4").click(function(){
-    $("#info-row").html("Ensures everyone feels welcome and valued, fostering inclusivity.").show();
-  });
+    switch(skillText) {
+      case "developer.":
+        description = "Recognizes and nurtures the potential in others, serving as a supportive mentor.";
+        break;
+      case "adaptability.":
+        description = "Flexibly embraces change, thriving in dynamic environment.";
+        break;
+      case "arranger.":
+        description = "Efficiently orchestrates tasks and resources, adept at coordination.";
+        break;
+      case "includer.":
+        description = "Ensures everyone feels welcome and valued, fostering inclusivity.";
+        break;
+      case "relator.":
+        description = "Forms deep, meaningful connections, prioritizing genuine relationships.";
+        break;
+    }
 
-  $("#skill5").click(function(){
-    $("#info-row").html("Forms deep, meaningful connections, prioritizing genuine relationships.").show();
+    // Display the description in the 'info-row' div
+    $("#info-row").html(description).show();
   });
 });
+
 
 
 

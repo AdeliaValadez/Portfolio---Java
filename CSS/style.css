@@ -353,7 +353,7 @@ li {
 }
 
 .skills button.active {
-  background-color: #45a049!important; /* Change background color of active button */
+  background-color: #4d4d4d!important; /* Change background color of active button */
   color: white!important; /* Change text color of active button */
 }
 
