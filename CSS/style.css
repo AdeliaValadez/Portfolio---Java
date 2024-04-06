@@ -345,6 +345,7 @@ li {
 .split-columns {
   display: flex;
   justify-content: center;
+  text-align: left;
   gap: 100px;
 
   /* Adjust the gap between columns */
