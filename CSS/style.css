@@ -731,3 +731,10 @@ footer {
     margin-left: auto; /* Align the toggler to the right */
   }
   }
+
+  @media screen and (max-width: 600px) {
+    .containerSkills {
+      width: 90%;
+      margin: 0 auto; /* Center the container */
+    }
+  }
