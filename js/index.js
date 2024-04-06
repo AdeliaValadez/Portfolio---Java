@@ -24,7 +24,7 @@ $(document).ready(function(){
         description = "Recognizes and nurtures the potential in others, serving as a supportive mentor.";
         break;
       case "adaptability.":
-        description = "Flexibly embraces change, thriving in dynamic environment.";
+        description = "Flexibly embraces change, thriving in a dynamic environment.";
         break;
       case "arranger.":
         description = "Efficiently orchestrates tasks and resources, adept at coordination.";
