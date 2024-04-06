@@ -1,0 +1,732 @@
+.carousel-slide li {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide li.active {
+  opacity: 1;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+
+.carousel-slide li.prev,
+.carousel-slide li.next {
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Navigation */
+.menu {
+  background-color: white;
+  position: relative;
+}
+
+.navbar-toggler-icon.open .top-bar {
+  transform: translateY(5px) rotate(45deg) !important;
+}
+
+.navbar-toggler-icon.open .middle-bar {
+  opacity: 0 !important;
+}
+
+.navbar-toggler-icon.open .bottom-bar {
+  transform: translateY(-5px) rotate(-45deg) !important;
+}
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  border-radius: 16px;
+
+}
+
+.navbar-nav .nav-link {
+  padding: 15px 20px; /* Adjust padding as needed */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for background color and text color */
+  border-radius: 16px;
+
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #4d4d4d; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  border-radius: 16px;
+}
+
+.navbar-nav .nav-link:hover.active {
+  color: #fff; /* Change text color of active item on hover */
+  border-radius: 16px;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+  max-width: 20%;
+}
+
+.nav-item {
+  font-family: "poppins";
+  padding-right: 40px;
+  font-size: 30px;
+  background: white;
+}
+
+.mylogo {
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+
+/* Footer */
+footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
+  color: #4d4d4d !important;
+  margin: 90px;
+  background-color: white!important;
+}
+
+/* Typography */
+.bold-heading {
+  font-weight: bold!important;
+  color: #4d4d4d;
+}
+
+h1 {
+  font-family: "Montagu Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: bold;
+  color: #173A2B !important;
+  font-size: 60px !important;
+}
+
+.head1 {
+  margin-bottom: 20px;
+}
+
+.head {
+  transform: translateX(150px);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.p1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400 !important;
+  font-style: normal;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+h3 {
+  font-family: "montagu slab", serif;
+  color: #173a2b!important;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 36px!important;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400!important;
+  font-style: normal;
+  color: #4D4D4D;
+}
+
+.subtext {
+  color: #304FBC;
+  font-weight: 500;
+  font-size: 30px!important;
+}
+
+/* Section Header */
+.horizontal-divider {
+  width: 80%;
+  margin: auto;
+  /* Center the divider horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-title {
+  padding: 100px;
+  font-family: "Montagu Slab", serif;
+  font-size: 48px;
+  font-style: bold;
+  color: #173A2B;
+  font-weight: bold;
+  /* Title font weight */
+  padding-right: 20px;
+  /* Add space to the right of the title */
+}
+
+.divider-line {
+  display: flex;
+  flex: 1;
+  border-bottom: 2px solid #4d4d4d;
+  /* Horizontal line style */
+  margin-top: 6px;
+  /* Adjust vertical alignment */
+}
+
+/* HeroSpace */
+.herospace {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.profileimg {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.biocontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.outlined-button {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #173A2B;
+  background-color: transparent;
+  color: #173A2B;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 40px;
+  width: 150px;
+}
+
+.outlined-button:hover {
+  background-color: #4D4d4d;
+  color: #fff;
+}
+
+/* My Process */
+.sectiontwo {
+  height: 600px;
+}
+
+.process-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.processlist {
+  display: flex;
+  justify-content: center;
+  color: #173A2B;
+  padding-bottom: 100px;
+}
+
+.processlist ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.processlist li {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 60px;
+  font-family: "poppins";
+  font-size: 24px;
+  align-items: center;
+  height: 60px;
+  width: 150px;
+  justify-content: center;
+}
+
+/* Skills */
+
+#skill1, #skill2, #skill3, #skill4, #skill5 {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #173A2B;
+  background-color: transparent;
+  color: #173A2B;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 40px;
+  width: 180px;
+  height: 60px; /* Add this line to set the height of the buttons */
+}
+
+#skill1:hover, #skill2:hover, #skill3:hover, #skill4:hover, #skill5:hover {
+  background-color: #4D4d4d;
+  color: #fff;
+}
+
+.skills.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.containerSkills {
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills.row, #info-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  justify-content: center; /* Center-align items horizontally */
+  margin-top: 20px; /* Add margin between rows */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#info-row {
+  margin-top: 20px; /* Adjust the margin as needed */
+  text-align: center; /* Center-align the text */
+  padding-top: 20px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400!important;
+  font-size: 24px;
+  font-style: normal;
+  color: #4D4D4D;
+}
+
+.bold-heading {
+  margin-left: 20%;
+}
+
+.columnSkills {
+  padding-top: 50px;
+}
+
+.split-columns {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+  /* Adjust the gap between columns */
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.skills button.active {
+  background-color: #45a049!important; /* Change background color of active button */
+  color: white!important; /* Change text color of active button */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+}
+
+
+
+
+/* Success Stories */
+.container-fluid1 {
+  width: 100%;
+  display: grid;
+}
+
+.sectionfour {
+  display: grid;
+  place-items: center;
+}
+
+.card1 {
+  margin-bottom: 50px;
+  /* Space between cards */
+  border: 0px solid #ccc;
+  /* Just for visualization */
+  width: 60%;
+  /* Ensure cards take full width */
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Two columns for image and content */
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),
+    /* Main soft shadow */
+    0px 0px 50px rgba(0, 0, 0, 0.05);
+  /* Secondary very soft shadow */
+  align-items: center;
+}
+
+.card1 {
+  margin-top: 50px;
+  height: auto;
+}
+
+.card1 .image-container {
+  display: grid;
+  place-items: center;
+}
+
+.content-container {
+  display: grid;
+  text-align: left;
+}
+
+.card1 img {
+  max-width: 90%;
+  /* Make the image fill its container */
+  max-height: 100%;
+}
+
+.card1 .content-container {
+  padding: 40px;
+  /* Add padding to the content container */
+  display: flex;
+  /* Use flexbox to align text */
+  flex-direction: column;
+  /* Stack text vertically */
+}
+
+.card1 .content h3,
+.card1 .content p {
+  margin: 0;
+  /* Remove default margin */
+  text-align: left;
+  /* Align text to the left */
+}
+
+
+
+.column {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+li {
+  margin-bottom: 40px;
+  /* Adjust spacing between list items */
+}
+
+.checkmark {
+  margin-right: 5px;
+  /* Adjust spacing between check mark and text */
+  color: #304FBC;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-brand.mylogo {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust card layout */
+  .card1 {
+    grid-template-columns: 1fr;
+    /* Change to one column layout */
+    height: auto;
+    /* Set height to auto to fit content */
+  }
+
+  /* Adjust image position */
+  .card1 .image-container {
+    order: -1;
+    padding-top: 20px;
+    /* Change order to move image to the top */
+    margin-bottom: 20px;
+    /* Add some spacing between image and content */
+  }
+
+  /* Adjust content container */
+  .card1 .content-container {
+    padding: 20px;
+    /* Reduce padding for better spacing on small screens */
+  }
+
+  .head1 {
+    text-align: center;
+    /* Align "Adelia" to the left */
+  }
+
+  .head {
+    transform: translateX(0);
+    text-align: center;
+    /* Reset transform for "Designs" */
+  }
+
+  .row {
+    flex-direction: column;    
+    place-content: center;
+    justify-content: center;
+        /* Change flex-direction to column to stack elements vertically */
+  }
+
+  .biocontent {
+    order: 2;
+    /* Move biocontent after the profile image */
+    text-align: center;
+    /* Align text to the left */
+  }
+
+  .profileimg {
+    order: 1;
+    /* Move profile image before the biocontent */
+    margin-bottom: 20px;
+    /* Add some spacing between the image and the text */
+    }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+
+  .profileimg {
+    width: 100%;
+    /* Reduce image width */
+    justify-content: center;
+    /* Center image */
+  }
+
+  .p1 h2 {
+    font-size: 18px;
+    /* Decrease font size */
+  }
+
+  .outlined-button {
+    width: 100%;
+    /* Make button full width */
+    margin-top: 30px;
+    /* Increase top margin */
+    background-color: transparent;
+    /* Remove background color */
+    color: #173A2B;
+    /* Set text color */
+    border: 2px solid #173A2B;
+    /* Set border color */
+  }
+
+  .outlined-button:hover {
+    background-color: transparent;
+    /* Remove hover background color */
+    color: #173A2B;
+    /* Set hover text color */
+  }
+
+  .herospace {
+    padding: 100px;
+  }
+  .col-4 {
+    margin: auto;
+    width: 50%!important;
+  }
+
+  .divider-title {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+  }
+
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-left,
+  .footer-right {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .divider-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .split-columns {
+    flex-direction: column; /* Change to a single column layout */
+    align-items: center; /* Center items in the column */
+    gap: 0px;
+    }
+    .split-columns .column {
+      font-size: 14px; /* Set the font size for the text */
+      text-align: left; /* Center align the text */
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .split-columns {
+      flex-direction: column;
+  }
+
+  .split-columns .column {
+      margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skillset {
+    display: block;
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  
+  .skillset li {
+    list-style-type: none; /* Use disc bullet points */
+    margin-bottom: 5px; /* Adjust spacing between items */
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .process-icon img {
+    max-width: 80%; /* Reduce the maximum width of the process icon */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .processlist {
+    display: flex; /* Change to block layout */
+    justify-content: center;
+    color: #173A2B;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  .processlist ul {
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .processlist li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .softskills {
+    margin-left: 20;
+    margin-top: 20px;
+  }
+  .softlist {
+    display: flex; /* Change to block layout */
+    justify-content: center;
+    color: #173A2B;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  .softlist ul {
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .softlist li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .container-fluid {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    padding-top: 20px;
+    width: 95%!important;
+  }
+
+  .mylogo {
+    flex: 1; /* Allow the logo to grow and take up remaining space */
+  }
+
+  .mylogo img {
+    max-height: 100%; /* Ensure the logo fits within the container */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Align the toggler to the right */
+  }
+  }
