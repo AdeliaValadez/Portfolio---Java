@@ -54,12 +54,12 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: black; /* Change text color on hover */
+  color: black!important; /* Change text color on hover */
   border-radius: 16px;
 }
 
 .navbar-nav .nav-link:hover.active {
-  color: #4d4d4d; /* Change text color of active item on hover */
+  color: #4d4d4d!important; /* Change text color of active item on hover */
   border-radius: 16px;
 }
 
@@ -740,7 +740,7 @@ footer {
 
 
   .card-link {
-    color: inherit; /* Use the color inherited from the parent */
-    text-decoration: none; /* Remove underline */
+    color: inherit!important; /* Use the color inherited from the parent */
+    text-decoration: none!important; /* Remove underline */
   }
   
