@@ -54,13 +54,12 @@
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #4d4d4d; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  color: black; /* Change text color on hover */
   border-radius: 16px;
 }
 
 .navbar-nav .nav-link:hover.active {
-  color: #fff; /* Change text color of active item on hover */
+  color: #4d4d4d; /* Change text color of active item on hover */
   border-radius: 16px;
 }
 
@@ -738,3 +737,10 @@ footer {
       margin: 0 auto; /* Center the container */
     }
   }
+
+
+  .card-link {
+    color: inherit; /* Use the color inherited from the parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
